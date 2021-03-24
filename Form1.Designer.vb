@@ -23,22 +23,22 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txtDisplay = New System.Windows.Forms.TextBox()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtSMTP = New System.Windows.Forms.TextBox()
-        Me.txtPorta = New System.Windows.Forms.TextBox()
-        Me.txrSenha = New System.Windows.Forms.TextBox()
-        Me.txtAssunto = New System.Windows.Forms.TextBox()
-        Me.txtMensagem = New System.Windows.Forms.TextBox()
-        Me.btnEnviar = New System.Windows.Forms.Button()
         Me.btnSair = New System.Windows.Forms.Button()
+        Me.btnEnviar = New System.Windows.Forms.Button()
+        Me.txtMensagem = New System.Windows.Forms.TextBox()
+        Me.txtAssunto = New System.Windows.Forms.TextBox()
+        Me.txrSenha = New System.Windows.Forms.TextBox()
+        Me.txtPorta = New System.Windows.Forms.TextBox()
+        Me.txtSMTP = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtDisplay = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox.SuspendLayout
         Me.SuspendLayout
         '
@@ -67,120 +67,15 @@ Partial Class Form1
         Me.GroupBox.TabStop = false
         Me.GroupBox.Text = "Configuração"
         '
-        'Label1
+        'btnSair
         '
-        Me.Label1.AutoSize = true
-        Me.Label1.Location = New System.Drawing.Point(31, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Display:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = true
-        Me.Label2.Location = New System.Drawing.Point(37, 55)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "E-mail:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = true
-        Me.Label3.Location = New System.Drawing.Point(34, 78)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(40, 13)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "SMTP:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = true
-        Me.Label4.Location = New System.Drawing.Point(40, 100)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 13)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Porta:"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = true
-        Me.Label5.Location = New System.Drawing.Point(34, 122)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(41, 13)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Senha:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = true
-        Me.Label6.Location = New System.Drawing.Point(27, 145)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(48, 13)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Assunto:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = true
-        Me.Label7.Location = New System.Drawing.Point(13, 168)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(62, 13)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "Mensagem:"
-        '
-        'txtDisplay
-        '
-        Me.txtDisplay.Location = New System.Drawing.Point(81, 28)
-        Me.txtDisplay.Name = "txtDisplay"
-        Me.txtDisplay.Size = New System.Drawing.Size(234, 20)
-        Me.txtDisplay.TabIndex = 7
-        '
-        'txtEmail
-        '
-        Me.txtEmail.Location = New System.Drawing.Point(81, 52)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(394, 20)
-        Me.txtEmail.TabIndex = 8
-        '
-        'txtSMTP
-        '
-        Me.txtSMTP.Location = New System.Drawing.Point(81, 75)
-        Me.txtSMTP.Name = "txtSMTP"
-        Me.txtSMTP.Size = New System.Drawing.Size(394, 20)
-        Me.txtSMTP.TabIndex = 9
-        '
-        'txtPorta
-        '
-        Me.txtPorta.Location = New System.Drawing.Point(81, 97)
-        Me.txtPorta.Name = "txtPorta"
-        Me.txtPorta.Size = New System.Drawing.Size(122, 20)
-        Me.txtPorta.TabIndex = 10
-        '
-        'txrSenha
-        '
-        Me.txrSenha.Location = New System.Drawing.Point(81, 119)
-        Me.txrSenha.Name = "txrSenha"
-        Me.txrSenha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txrSenha.Size = New System.Drawing.Size(122, 20)
-        Me.txrSenha.TabIndex = 11
-        '
-        'txtAssunto
-        '
-        Me.txtAssunto.Location = New System.Drawing.Point(81, 142)
-        Me.txtAssunto.Name = "txtAssunto"
-        Me.txtAssunto.Size = New System.Drawing.Size(394, 20)
-        Me.txtAssunto.TabIndex = 12
-        '
-        'txtMensagem
-        '
-        Me.txtMensagem.Location = New System.Drawing.Point(81, 165)
-        Me.txtMensagem.Multiline = true
-        Me.txtMensagem.Name = "txtMensagem"
-        Me.txtMensagem.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtMensagem.Size = New System.Drawing.Size(394, 98)
-        Me.txtMensagem.TabIndex = 13
+        Me.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btnSair.Location = New System.Drawing.Point(319, 269)
+        Me.btnSair.Name = "btnSair"
+        Me.btnSair.Size = New System.Drawing.Size(75, 23)
+        Me.btnSair.TabIndex = 15
+        Me.btnSair.Text = "Sair"
+        Me.btnSair.UseVisualStyleBackColor = true
         '
         'btnEnviar
         '
@@ -192,15 +87,127 @@ Partial Class Form1
         Me.btnEnviar.Text = "Enviar"
         Me.btnEnviar.UseVisualStyleBackColor = true
         '
-        'btnSair
+        'txtMensagem
         '
-        Me.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.btnSair.Location = New System.Drawing.Point(319, 269)
-        Me.btnSair.Name = "btnSair"
-        Me.btnSair.Size = New System.Drawing.Size(75, 23)
-        Me.btnSair.TabIndex = 15
-        Me.btnSair.Text = "Sair"
-        Me.btnSair.UseVisualStyleBackColor = true
+        Me.txtMensagem.Location = New System.Drawing.Point(81, 165)
+        Me.txtMensagem.Multiline = true
+        Me.txtMensagem.Name = "txtMensagem"
+        Me.txtMensagem.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtMensagem.Size = New System.Drawing.Size(394, 98)
+        Me.txtMensagem.TabIndex = 13
+        Me.txtMensagem.Text = "teste"
+        '
+        'txtAssunto
+        '
+        Me.txtAssunto.Location = New System.Drawing.Point(81, 142)
+        Me.txtAssunto.Name = "txtAssunto"
+        Me.txtAssunto.Size = New System.Drawing.Size(394, 20)
+        Me.txtAssunto.TabIndex = 12
+        Me.txtAssunto.Text = "teste"
+        '
+        'txrSenha
+        '
+        Me.txrSenha.Location = New System.Drawing.Point(81, 119)
+        Me.txrSenha.Name = "txrSenha"
+        Me.txrSenha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txrSenha.Size = New System.Drawing.Size(122, 20)
+        Me.txrSenha.TabIndex = 11
+        Me.txrSenha.Text = "cini2001"
+        '
+        'txtPorta
+        '
+        Me.txtPorta.Location = New System.Drawing.Point(81, 97)
+        Me.txtPorta.Name = "txtPorta"
+        Me.txtPorta.Size = New System.Drawing.Size(122, 20)
+        Me.txtPorta.TabIndex = 10
+        Me.txtPorta.Text = "587"
+        '
+        'txtSMTP
+        '
+        Me.txtSMTP.Location = New System.Drawing.Point(81, 75)
+        Me.txtSMTP.Name = "txtSMTP"
+        Me.txtSMTP.Size = New System.Drawing.Size(394, 20)
+        Me.txtSMTP.TabIndex = 9
+        Me.txtSMTP.Text = "smtp.gmail.com"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Location = New System.Drawing.Point(81, 52)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(394, 20)
+        Me.txtEmail.TabIndex = 8
+        Me.txtEmail.Text = "andre.presys@gmail.com"
+        '
+        'txtDisplay
+        '
+        Me.txtDisplay.Location = New System.Drawing.Point(81, 28)
+        Me.txtDisplay.Name = "txtDisplay"
+        Me.txtDisplay.Size = New System.Drawing.Size(234, 20)
+        Me.txtDisplay.TabIndex = 7
+        Me.txtDisplay.Text = "André"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = true
+        Me.Label7.Location = New System.Drawing.Point(13, 168)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(62, 13)
+        Me.Label7.TabIndex = 6
+        Me.Label7.Text = "Mensagem:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = true
+        Me.Label6.Location = New System.Drawing.Point(27, 145)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(48, 13)
+        Me.Label6.TabIndex = 5
+        Me.Label6.Text = "Assunto:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = true
+        Me.Label5.Location = New System.Drawing.Point(34, 122)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(41, 13)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Senha:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = true
+        Me.Label4.Location = New System.Drawing.Point(40, 100)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(35, 13)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Porta:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = true
+        Me.Label3.Location = New System.Drawing.Point(34, 78)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "SMTP:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = true
+        Me.Label2.Location = New System.Drawing.Point(37, 55)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "E-mail:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = true
+        Me.Label1.Location = New System.Drawing.Point(31, 31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Display:"
         '
         'Form1
         '

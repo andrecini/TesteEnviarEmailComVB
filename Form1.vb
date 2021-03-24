@@ -10,6 +10,9 @@ Public Class Form1
 
         Try
             objEnvio = New SmtpClient(txtSMTP.Text, txtPorta.Text)
+            objEnvio.EnableSsl = True
+            
+            objEnvio.UseDefaultCredentials = False
             objEmail = New MailMessage
 
             'Email destino:
@@ -24,16 +27,18 @@ Public Class Form1
             'Define Prioridade
             objEmail.Priority = MailPriority.High
 
+            
+
             'Define configuração de leitura
-            objEmail.Headers.Add("Disposition-Notification-To ", txtEmail.Text)
+            'objEmail.Headers.Add("Disposition-Notification-To", txtEmail.Text)
 
             'Define mensagem de texto
             Dim mensagem As AlternateView = AlternateView.CreateAlternateViewFromString(txtMensagem.Text, _
                                                                                                  Nothing, _
                                                                             Mime.MediaTypeNames.Text.Plain)
             objEmail.AlternateViews.Add(mensagem)
-            'Define credenciais
-            Dim credencial As New NetworkCredential(txtEmail.Text, txrSenha.Text)
+                      
+            objEnvio.Credentials = New NetworkCredential("andre.presys@gmail.com", "cini2001")
             objEnvio.Send(objEmail)
 
             'Define Retorno
@@ -43,8 +48,8 @@ Public Class Form1
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         Finally
-            objEmail = Nothing
-            objEnvio = Nothing
+            'objEmail = Nothing
+            'objEnvio = Nothing
         End Try
 
         Return blnRetorno
